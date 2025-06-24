@@ -4,31 +4,29 @@ import { assets } from '../assets/assets'
 const Home = () => {
   return (
     // Hero component
-    <div className='flex flex-col border border-gray-400 sm:flex-row'>
-        <div id="hero" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#hero" data-slide-to="0" class="active"></li>
-                <li data-target="#hero" data-slide-to="1"></li>
-                <li data-target="#hero" data-slide-to="2"></li>
+    <div className="d-flex flex-column flex-sm-row border border-secondary">
+        <div id="hero" className="carousel slide" data-bs-ride="carousel">
+            <ol className="carousel-indicators">
+                <li data-bs-target="#hero" data-bs-slide-to="0" className="active"></li>
+                <li data-bs-target="#hero" data-bs-slide-to="1"></li>
+                <li data-bs-target="#hero" data-bs-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                <img class="d-block w-100" src="..." alt="First slide" />
+            <div className="carousel-inner">
+                <div className="carousel-item active">
+                <img className="d-block w-100" src={assets.hero_img} alt="First slide" />
                 </div>
-                <div class="carousel-item">
-                <img class="d-block w-100" src="..." alt="Second slide" />
+                <div className="carousel-item">
+                <img className="d-block w-100" src={assets.hero_img} alt="Second slide" />
                 </div>
-                <div class="carousel-item">
-                <img class="d-block w-100" src="..." alt="Third slide" />
+                <div className="carousel-item">
+                <img className="d-block w-100" src={assets.hero_img} alt="Third slide" />
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#hero" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+            <a className="carousel-control-prev" href="#hero" role="button" data-bs-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
             </a>
-            <a class="carousel-control-next" href="#hero" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+            <a className="carousel-control-next" href="#hero" role="button" data-bs-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
             </a>
             </div>
     </div>

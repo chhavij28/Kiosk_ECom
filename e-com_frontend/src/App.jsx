@@ -15,7 +15,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 export default function App() {
   return <BrowserRouter>
-        <div className="d-flex flex-column min-vh-100 bg-light">
+        <div className="d-flex flex-column min-vh-100 bg-light px-3 px-sm-3 px-md-4 px-lg-5">
           <NavBar />
           <SearchBar />
           <main className="flex-grow-1">
