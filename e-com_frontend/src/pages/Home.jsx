@@ -1,10 +1,11 @@
 import React from 'react'
 import { assets } from '../assets/assets'
+import './Home.css'
 
 const Home = () => {
   return (
     // Hero component
-    <div className="d-flex flex-column flex-sm-row border border-secondary">
+    <div className="d-flex flex-column flex-sm-row">
         <div id="hero" className="carousel slide" data-bs-ride="carousel">
             <ol className="carousel-indicators">
                 <li data-bs-target="#hero" data-bs-slide-to="0" className="active"></li>
@@ -13,13 +14,13 @@ const Home = () => {
             </ol>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                <img className="d-block w-100" src={assets.hero_img} alt="First slide" />
+                <img className="d-block w-100" src={assets.hero_img1} alt="First slide" />
                 </div>
                 <div className="carousel-item">
-                <img className="d-block w-100" src={assets.hero_img} alt="Second slide" />
+                <img className="d-block w-100" src={assets.hero_img2} alt="Second slide" />
                 </div>
                 <div className="carousel-item">
-                <img className="d-block w-100" src={assets.hero_img} alt="Third slide" />
+                <img className="d-block w-100" src={assets.hero_img3} alt="Third slide" />
                 </div>
             </div>
             <a className="carousel-control-prev" href="#hero" role="button" data-bs-slide="prev">
