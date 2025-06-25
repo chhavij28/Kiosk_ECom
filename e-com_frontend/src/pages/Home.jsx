@@ -11,6 +11,7 @@ const Home = () => {
                 <li data-bs-target="#hero" data-bs-slide-to="0" className="active"></li>
                 <li data-bs-target="#hero" data-bs-slide-to="1"></li>
                 <li data-bs-target="#hero" data-bs-slide-to="2"></li>
+                <li data-bs-target="#hero" data-bs-slide-to="3"></li>
             </ol>
             <div className="carousel-inner">
                 <div className="carousel-item active">
@@ -21,6 +22,9 @@ const Home = () => {
                 </div>
                 <div className="carousel-item">
                 <img className="d-block w-100" src={assets.hero_img3} alt="Third slide" />
+                </div>
+                <div className="carousel-item">
+                <img className="d-block w-100" src={assets.hero_img4} alt="Third slide" />
                 </div>
             </div>
             <a className="carousel-control-prev" href="#hero" role="button" data-bs-slide="prev">
