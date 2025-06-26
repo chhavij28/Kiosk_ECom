@@ -25,7 +25,7 @@ const products = [
         image: ["e-com_frontend/src/assets/p_img2.png"],
         category: "Clothing",
         subCategory: "Slytherin",
-        bestseller: true
+        bestseller: false
     },
     {
         _id: "aaaac",
@@ -35,7 +35,7 @@ const products = [
         image: ["e-com_frontend/src/assets/p_img3.png"],
         category: "Clothing",
         subCategory: "Ravenclaw",
-        bestseller: true
+        bestseller: false
     },
     {
         _id: "aaaad",
@@ -45,7 +45,7 @@ const products = [
         image: ["e-com_frontend/src/assets/p_img4.png"],
         category: "Clothing",
         subCategory: "Hufflepuff",
-        bestseller: true
+        bestseller: false
     },
     {
         _id: "aaaae",
@@ -55,7 +55,7 @@ const products = [
         image: ["e-com_frontend/src/assets/p_img5.png"],
         category: "Clothing",
         subCategory: "Hogwarts",
-        bestseller: true
+        bestseller: false
     },
     {
         _id: "aaaaf",
@@ -65,7 +65,7 @@ const products = [
         image: ["e-com_frontend/src/assets/p_img6.png"],
         category: "Mugs",
         subCategory: "Gryffindor",
-        bestseller: true
+        bestseller: false
     },
     {
         _id: "aaaag",
@@ -105,7 +105,7 @@ const products = [
         image: ["e-com_frontend/src/assets/p_img10.png"],
         category: "Mugs",
         subCategory: "Hogwarts",
-        bestseller: false
+        bestseller: true
     },
     {
         _id: "aaaak",
@@ -185,7 +185,7 @@ const products = [
         image: ["e-com_frontend/src/assets/p_img18.png"],
         category: "Stationery",
         subCategory: "Others",
-        bestseller: false
+        bestseller: true
     },
     {
         _id: "aaaas",
@@ -205,7 +205,7 @@ const products = [
         image: ["e-com_frontend/src/assets/p_img20.png"],
         category: "Stationery",
         subCategory: "Slytherin",
-        bestseller: false
+        bestseller: true
     },
     {
         _id: "aaaau",
@@ -245,7 +245,7 @@ const products = [
         image: ["e-com_frontend/src/assets/p_img24.png"],
         category: "Keyring",
         subCategory: "Others",
-        bestseller: false
+        bestseller: true
     },
     {
         _id: "aaaay",
@@ -354,8 +354,8 @@ const products = [
         price: 240,
         image: ["e-com_frontend/src/assets/p_img35.png"],
         category: "Sweet Trolley",
-        subCategory: "WinteOthersrwear",
-        bestseller: false
+        subCategory: "Others",
+        bestseller: true
     },
     {
         _id: "aaabj",
@@ -375,7 +375,7 @@ const products = [
         image: ["e-com_frontend/src/assets/p_img37.png"],
         category: "Sweet Trolley",
         subCategory: "Others",
-        bestseller: false
+        bestseller: true
     },
     {
         _id: "aaabl",
@@ -495,7 +495,7 @@ const products = [
         image: ["e-com_frontend/src/assets/p_img49.png"],
         category: "Soft Toy",
         subCategory: "Others",
-        bestseller: false
+        bestseller: true
     },
     {
         _id: "aaabx",
@@ -505,7 +505,7 @@ const products = [
         image: ["e-com_frontend/src/assets/p_img50.png"],
         category: "Clothing",
         subCategory: "Gryffindor",
-        ler: false
+        bestseller: false
     },
     {
         _id: "aaaby",
@@ -515,7 +515,7 @@ const products = [
         image: ["e-com_frontend/src/assets/p_img51.png"],
         category: "Clothing",
         subCategory: "Slytherin",
-        bestseller: false
+        bestseller: true
     },
     {
         _id: "aaabz",
