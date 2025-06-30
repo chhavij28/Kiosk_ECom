@@ -1,0 +1,35 @@
+.custom-checkbox:checked {
+    background-color: #8B4513 !important;
+    border-color: #8B4513 !important;
+}
+
+
+.custom-pagination {
+  background-color: #fdf6e3;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.custom-pagination .page-link {
+  color: #8B4513;
+  border-color: #8B4513;
+}
+
+.custom-pagination .page-link:hover {
+    color: #8B4513;
+    /* border-color: #8B4513; */
+}
+
+.custom-pagination .page-link:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(139, 69, 19, 0.25); /* subtle brown glow */
+  border-color: #8B4513;
+}
+
+.custom-pagination .page-item.active .page-link {
+  background-color: #8B4513;
+  color: #fff;
+  border-color: #8B4513;
+}
+
+

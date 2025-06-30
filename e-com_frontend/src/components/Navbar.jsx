@@ -18,7 +18,7 @@ const NavBar = () => {
           {/* Bootstrap doesn't show hr by default; you can toggle visibility with JS or CSS */}
           <hr className="w-50 border-0 bg-secondary" style={{ height: '1.5px', display: 'none' }} />
         </NavLink>
-        <NavLink to="/collection" className="d-flex flex-column align-items-center gap-1 text-decoration-none text-secondary">
+        <NavLink to="/collections" className="d-flex flex-column align-items-center gap-1 text-decoration-none text-secondary">
           <p className="mb-0">COLLECTION</p>
           <hr className="w-50 border-0 bg-secondary" style={{ height: '1.5px', display: 'none' }} />
         </NavLink>

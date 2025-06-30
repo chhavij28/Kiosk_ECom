@@ -4,12 +4,12 @@ import NavBar from './components/Navbar';
 import Footer from './components/Footer';
 import SearchBar from './components/Searchbar'
 import Home from './pages/Home.jsx';
-// import { Collection } from './pages/Collection';
-// import { Cart } from './pages/Cart';
+import Collections from './pages/Collections';
+// import Cart from './pages/Cart';
 import About from './pages/About';
-// import { Contact } from './pages/Contact';
-// import { Privacy } from './pages/Privacy';
-// import { Terms } from './pages/Terms';
+// import Contact from './pages/Contact';
+// import Privacy from './pages/Privacy';
+// import Terms from './pages/Terms';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './App.css';
@@ -18,11 +18,11 @@ export default function App() {
   return <BrowserRouter>
         <div className="d-flex flex-column min-vh-100 bg-hogwarts px-3 px-sm-3 px-md-4 px-lg-5">
           <NavBar />
-          <SearchBar />
+          {/* <SearchBar /> */}
           <main className="flex-grow-1">
             <Routes>
               <Route path="/" element={<Home />} />
-              {/* <Route path="/collections" element={<Collection />} /> */}
+              <Route path="/collections" element={<Collections />} />
               {/* <Route path="/cart" element={<Cart />} /> */}
               <Route path="/about" element={<About />} />
               {/* <Route path="/contact" element={<Contact />} /> */}

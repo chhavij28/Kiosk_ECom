@@ -11,13 +11,13 @@ const Footer = () => {
           <Link to="/">
             <img src={assets.logo} className="mb-3" style={{ width: '8rem', cursor: 'pointer' }} alt="Logo" />
           </Link>
-          <p className="text-secondary text-start">
+          <p className="text-secondary">
             Thank you for shopping with Kiosk 9&frac34;! Follow us on social media for updates on new arrivals, exclusive offers, and more. Your fandom journey starts here—let's make it unforgettable!
           </p>
         </div>  
 
         {/* Company Links */}
-        <div className="col-6 col-sm-3 col-md-3 col-lg-3">
+        <div className="col-6 col-sm-3 col-md-3 col-lg-3 text-start">
           <p className="mb-3 h5">COMPANY</p>
           <ul className="list-unstyled text-secondary">
             <li><Link to="/" className="text-decoration-none text-secondary">Home</Link></li>
@@ -28,11 +28,11 @@ const Footer = () => {
         </div>
 
         {/* Contact Info */}
-        <div className="col-6 col-sm-3 col-md-3 col-lg-3">
+        <div className="col-6 col-sm-3 col-md-3 col-lg-3 text-start">
           <p className="mb-3 h5">GET IN TOUCH</p>
           <ul className="list-unstyled text-secondary">
             <li>+91 9876543210</li>
-            <li>contact.kiosk9and3/4@info.com</li>
+            <li>contact.kiosk9&3/4@info.com</li>
           </ul>
         </div>
       </div>

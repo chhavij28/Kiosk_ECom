@@ -33,7 +33,7 @@ const Home = () => {
             <a className="carousel-control-next" href="#hero" role="button" data-bs-slide="next">
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
             </a>
-            </div>
+        </div>
     </div>
   )
 }
