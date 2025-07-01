@@ -5,11 +5,10 @@ import Footer from './components/Footer';
 import SearchBar from './components/Searchbar'
 import Home from './pages/Home.jsx';
 import Collections from './pages/Collections';
+import Product from './pages/Product'
 // import Cart from './pages/Cart';
 import About from './pages/About';
 // import Contact from './pages/Contact';
-// import Privacy from './pages/Privacy';
-// import Terms from './pages/Terms';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './App.css';
@@ -23,11 +22,10 @@ export default function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/collections" element={<Collections />} />
+              <Route path='/product/:productId' element={<Product />} />
               {/* <Route path="/cart" element={<Cart />} /> */}
               <Route path="/about" element={<About />} />
               {/* <Route path="/contact" element={<Contact />} /> */}
-              {/* <Route path="/privacy" element={<Privacy />} />
-              <Route path="/terms" element={<Terms />} /> */}
             </Routes>
           </main>
           <Footer />
