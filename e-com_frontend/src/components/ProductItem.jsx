@@ -8,6 +8,7 @@ const currency = '₹'
 
   return (
     <Link className="text-decoration-none text-dark" to={`/product/${id}`}>
+      <div className="d-flex flex-column align-items-center justify-content-center">
       <div className="overflow-hidden d-flex align-items-center justify-content-center"
         style={{
             height: "250px",
@@ -31,6 +32,7 @@ const currency = '₹'
           maximumFractionDigits: 2,
         })}
       </p>
+      </div>
     </Link>
   );
 };

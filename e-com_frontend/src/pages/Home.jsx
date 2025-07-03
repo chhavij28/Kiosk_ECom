@@ -1,11 +1,12 @@
 import React from 'react'
 import { assets } from '../assets/assets'
 import './Home.css'
+import Bestsellers from '../components/Bestsellers';
 
 const Home = () => {
   return (
     // Hero component
-    <div className="d-flex flex-column flex-sm-row">
+    <div className="d-flex flex-column">
         <div id="hero" className="carousel slide" data-bs-ride="carousel">
             <ol className="carousel-indicators">
                 <li data-bs-target="#hero" data-bs-slide-to="0" className="active"></li>
@@ -34,7 +35,10 @@ const Home = () => {
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
             </a>
         </div>
+        <Bestsellers />
     </div>
+
+    
   )
 }
 
