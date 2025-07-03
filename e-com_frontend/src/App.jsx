@@ -6,29 +6,35 @@ import SearchBar from './components/Searchbar'
 import Home from './pages/Home.jsx';
 import Collections from './pages/Collections';
 import Product from './pages/Product'
-// import Cart from './pages/Cart';
+import Cart from './pages/Cart';
 import About from './pages/About';
-// import Contact from './pages/Contact';
+import Checkout from './pages/Checkout';
+import Confirmation from './pages/Confirmation';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import './App.css';
+import CartContextProvider from './context/CartContext.jsx'
 
 export default function App() {
   return <BrowserRouter>
+        <CartContextProvider>
         <div className="d-flex flex-column min-vh-100 bg-hogwarts px-3 px-sm-3 px-md-4 px-lg-5">
           <NavBar />
           {/* <SearchBar /> */}
-          <main className="flex-grow-1">
+          <main className="flex-grow-1 justify-content-center">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/collections" element={<Collections />} />
               <Route path='/product/:productId' element={<Product />} />
-              {/* <Route path="/cart" element={<Cart />} /> */}
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/checkout" element={<Checkout />} />
+              <Route path="/confirm" element={<Confirmation />} />
               <Route path="/about" element={<About />} />
-              {/* <Route path="/contact" element={<Contact />} /> */}
             </Routes>
           </main>
           <Footer />
         </div>
+        </CartContextProvider>
       </BrowserRouter>;
 }

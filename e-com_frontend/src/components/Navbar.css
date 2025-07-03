@@ -1,0 +1,17 @@
+.custom-offcanvas {
+  background-color: #fdf6e3 !important ;
+  color: #8B4513 !important;           
+}
+.offcanvas-header {
+    background-color: #8B4513 !important;
+    color: #fdf6e3 !important;
+}
+
+.custom-offcanvas .btn-close {
+    filter: invert(1); /* Makes the close button visible on dark backgrounds */
+}
+
+.custom-offcanvas .nav-link {
+  color: #8B4513 !important;
+}
+

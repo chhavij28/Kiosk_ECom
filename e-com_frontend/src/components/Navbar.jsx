@@ -1,10 +1,12 @@
-import React from 'react';
+import {React, useContext} from 'react';
 import { assets } from '../assets/assets';
 import { Link, NavLink } from 'react-router-dom';
-// import { ShopContext } from '../context/ShopContext';
+import { CartContext } from '../context/CartContext';
+import './Navbar.css';
 
 const NavBar = () => {
-  // const { setShowSearch, getCartCount } = useContext(ShopContext);
+  // const { setShowSearch, getCartCount } = useContext(CartContext);
+  const { getCartCount } = useContext(CartContext);
 
   return (
     <div className="d-flex align-items-center justify-content-between py-4 fw-medium">
@@ -15,7 +17,6 @@ const NavBar = () => {
       <ul className="d-none d-sm-flex gap-4 small text-secondary list-unstyled mb-0">
         <NavLink to="/" className="d-flex flex-column align-items-center gap-1 text-decoration-none text-secondary">
           <p className="mb-0">HOME</p>
-          {/* Bootstrap doesn't show hr by default; you can toggle visibility with JS or CSS */}
           <hr className="w-50 border-0 bg-secondary" style={{ height: '1.5px', display: 'none' }} />
         </NavLink>
         <NavLink to="/collections" className="d-flex flex-column align-items-center gap-1 text-decoration-none text-secondary">
@@ -26,15 +27,11 @@ const NavBar = () => {
           <p className="mb-0">ABOUT</p>
           <hr className="w-50 border-0 bg-secondary" style={{ height: '1.5px', display: 'none' }} />
         </NavLink>
-        <NavLink to="/contact" className="d-flex flex-column align-items-center gap-1 text-decoration-none text-secondary">
-          <p className="mb-0">CONTACT</p>
-          <hr className="w-50 border-0 bg-secondary" style={{ height: '1.5px', display: 'none' }} />
-        </NavLink>
       </ul>
 
       <div className="d-flex align-items-center gap-3">
         <img
-          // onClick={() => setShowSearch(true)} // Bootstrap doesn't handle this natively; use custom modal or input
+          // onClick={() => setShowSearch(true)}
           src={assets.search_icon}
           className="cursor-pointer"
           style={{ width: '1.25rem' }}
@@ -57,9 +54,9 @@ const NavBar = () => {
 
         <Link to="/cart" className="position-relative">
           <img src={assets.cart_icon} className="img-fluid" style={{ width: '1.25rem', minWidth: '1.25rem' }} alt="Cart" />
-          {/* <p className="position-absolute end-0 bottom-0 bg-dark text-white rounded-circle text-center" style={{ width: '1rem', height: '1rem', fontSize: '0.5rem', lineHeight: '1rem' }}>
+          <span className="position-absolute top-100 bottom-0 translate-middle bg-dark text-white rounded-circle text-center" style={{ width: '1rem', height: '1rem', fontSize: '0.5rem', lineHeight: '1rem' }}>
             {getCartCount()}
-          </p> */}
+          </span>
         </Link>
 
         {/* Trigger Bootstrap Offcanvas for mobile menu */}
@@ -75,16 +72,15 @@ const NavBar = () => {
       </div>
 
       {/* INFO: Sidebar menu for smaller screens using Bootstrap Offcanvas */}
-      <div className="offcanvas offcanvas-start" tabIndex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+      <div className="offcanvas offcanvas-end custom-offcanvas" tabIndex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
         <div className="offcanvas-header">
           <h5 className="offcanvas-title" id="mobileMenuLabel">Menu</h5>
           <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div className="offcanvas-body d-flex flex-column gap-2">
+        <div className="offcanvas-body d-flex flex-column gap-2 text-start">
           <NavLink className="text-decoration-none text-secondary" to="/">HOME</NavLink>
-          <NavLink className="text-decoration-none text-secondary" to="/collection">COLLECTION</NavLink>
+          <NavLink className="text-decoration-none text-secondary" to="/collections">COLLECTION</NavLink>
           <NavLink className="text-decoration-none text-secondary" to="/about">ABOUT</NavLink>
-          <NavLink className="text-decoration-none text-secondary" to="/contact">CONTACT</NavLink>
         </div>
       </div>
     </div>
