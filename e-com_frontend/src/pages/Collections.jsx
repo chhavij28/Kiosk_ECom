@@ -161,7 +161,6 @@ const Collections = () => {
             {/* View Product Items */}
             <div className="container flex-grow col-12 col-md-10 col-lg-10">
                 <div className="d-flex justify-content-between align-items-center mb-4">
-                    {/* <Title text1={"ALL"} text2={"COLLECTIONS"} /> */}
                     <p className="fs-2">SHOP COLLECTION</p>
                     {/* Product Sort */}
                     {/* <select

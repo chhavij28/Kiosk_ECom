@@ -3,10 +3,23 @@ import { CartContext } from "../context/CartContext";
 import ProductItem from "./ProductItem";
 
 const Bestsellers = () => {
-  const { products } = useContext(CartContext);
+  const [ products, setProducts ] = useState([]);
   const [bestSeller, setBestSeller] = useState([]);
 
+  const getProducts =  async () => {
+    await axios.get('http://localhost:3000/api/product/collections')
+    .then(response =>{
+        console.log("response:", response);
+        setProducts(response.data.products);
+    })
+    .catch(error =>{
+        console.log("error fetching products:", error.message);
+    })
+  }
+
+
   useEffect(() => {
+    getProducts();
     const bestProduct = products.filter((item) => item.bestseller);
     setBestSeller(bestProduct.slice(0, 8));
   }, []);

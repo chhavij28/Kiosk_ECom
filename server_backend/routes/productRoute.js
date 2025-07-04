@@ -74,4 +74,57 @@ productRouter.post("/filter", async (req,res) =>{
 })
 
 
+//add new product
+productRouter.post("/add", async (req, res) => {
+    const {name, description, price, image, category, subCategory, bestseller} = req.body;
+    console.log(name, description, price, image, category, subCategory, bestseller);
+    try {
+        const result = await productModel.insertOne({
+            name: name,
+            description: description,
+            price: price,
+            image: image,
+            category: category,
+            subCategory: subCategory,
+            bestseller: bestseller
+        });
+        console.log("New ObjectId:", result.insertedId);
+        res.status(200).json({success: true, insertedId: result.insertedId});
+    } catch (error) {
+        console.log("Insert failed:", error.message);
+        res.status(500).json({success: false, message: error.message});
+    }
+})
+
+//edit product
+productRouter.post("/edit", async (req, res) => {
+    const {name, field, value} = req.body;
+    console.log(name, field, value);
+    try {
+        const result = await productModel.updateOne(
+            { name: name }, 
+            { $set: { [field]: value } }
+        );
+        res.json({ success: true, result });
+        console.log(result);
+    } catch (error) {
+        console.log("Edit failed:", error.message);
+        res.status(500).json({success: false, message: error.message});
+    }
+})
+
+//delete product
+productRouter.post("/delete", async (req, res) => {
+    const {name} = req.body;
+    try {
+        const result = await productModel.deleteOne(
+            { name: name }
+        );
+        res.json({ success: true, result });
+    } catch (error) {
+        console.log("Delete failed:", error.message);
+        res.status(500).json({success: false, message: error.message});
+    }
+})
+
 export default productRouter;

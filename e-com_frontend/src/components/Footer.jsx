@@ -32,7 +32,7 @@ const Footer = () => {
           <p className="mb-3 h5">GET IN TOUCH</p>
           <ul className="list-unstyled text-secondary">
             <li>+91 9876543210</li>
-            <li>contact@kiosk9&3/4.com</li>
+            <li>contact@kiosk.com</li>
           </ul>
         </div>
       </div>

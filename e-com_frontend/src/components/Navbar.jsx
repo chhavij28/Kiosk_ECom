@@ -38,19 +38,11 @@ const NavBar = () => {
           alt="Search Products"
         />
 
-        {/* Bootstrap dropdowns require JS or data attributes; this is a custom hover dropdown */}
-        {/* <div className="position-relative group">
-          <Link to="/login">
-            <img src={assets.profile_icon} className="cursor-pointer" style={{ width: '1.25rem' }} alt="Your Profile" />
-          </Link>
-          <div className="position-absolute end-0 pt-4 d-none group-hover:d-block dropdown-menu">
-            <div className="d-flex flex-column gap-2 px-3 py-2 text-secondary rounded bg-light" style={{ width: '9rem' }}>
-              <p className="cursor-pointer text-decoration-none hover:text-dark">Profile</p>
-              <p className="cursor-pointer text-decoration-none hover:text-dark">Orders</p>
-              <p className="cursor-pointer text-decoration-none hover:text-dark">Logout</p>
-            </div>
-          </div>
-        </div> */}
+        
+        <Link to="/login">
+          <img src={assets.profile_icon} className="cursor-pointer" style={{ width: '1.25rem' }} alt="Admin Login" />
+        </Link>
+         
 
         <Link to="/cart" className="position-relative">
           <img src={assets.cart_icon} className="img-fluid" style={{ width: '1.25rem', minWidth: '1.25rem' }} alt="Cart" />
@@ -71,7 +63,7 @@ const NavBar = () => {
         </button>
       </div>
 
-      {/* INFO: Sidebar menu for smaller screens using Bootstrap Offcanvas */}
+      {/* Sidebar menu for smaller screens using Bootstrap Offcanvas */}
       <div className="offcanvas offcanvas-end custom-offcanvas" tabIndex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
         <div className="offcanvas-header">
           <h5 className="offcanvas-title" id="mobileMenuLabel">Menu</h5>

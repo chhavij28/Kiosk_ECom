@@ -40,13 +40,6 @@ const Product = () => {
         {/* Product Info */}
         <div className="col-md-8 text-start">
           <h1 className="h2">{productData.name}</h1>
-          {/* <div className="d-flex align-items-center mt-2">
-            {[...Array(4)].map((_, i) => (
-              <img key={i} src={assets.star_icon} alt="Rating" className="me-1" style={{ width: '16px' }} />
-            ))}
-            <img src={assets.star_dull_icon} alt="Rating" className="me-2" style={{ width: '16px' }} />
-            <span>(122)</span>
-          </div> */}
           <h2 className="mt-3 h4">{currency}{productData.price}</h2>
           <p className="text-muted mt-3">{productData.description}</p>
 

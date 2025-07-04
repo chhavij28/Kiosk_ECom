@@ -10,6 +10,12 @@ import Cart from './pages/Cart';
 import About from './pages/About';
 import Checkout from './pages/Checkout';
 import Confirmation from './pages/Confirmation';
+import Login from './pages/Login';
+import Admin from './pages/Admin';
+import AdminView from './pages/AdminView';
+import AdminAdd from './pages/AdminAdd';
+import AdminEdit from './pages/AdminEdit';
+import AdminDelete from './pages/AdminDelete';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -30,6 +36,12 @@ export default function App() {
               <Route path="/cart" element={<Cart />} />
               <Route path="/checkout" element={<Checkout />} />
               <Route path="/confirm" element={<Confirmation />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/admin" element={<Admin />} />
+              <Route path="/view" element={<AdminView />} />
+              <Route path="/add" element={<AdminAdd />} />
+              <Route path="/edit" element={<AdminEdit />} />
+              <Route path="/delete" element={<AdminDelete />} />
               <Route path="/about" element={<About />} />
             </Routes>
           </main>

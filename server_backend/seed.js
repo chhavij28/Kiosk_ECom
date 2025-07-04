@@ -8,7 +8,6 @@ dotenv.config();
 
 const products = [
     {
-        _id: "aaaaa",
         name: "Gryffindor House Hoodie",
         description: "Stay warm and spellbound in this cozy hoodie inspired by the magic of the wizarding world.",
         price: 700,
@@ -18,7 +17,6 @@ const products = [
         bestseller: true
     },
     {
-        _id: "aaaab",
         name: "Slytherin House Hoodie",
         description: "Stay warm and spellbound in this cozy hoodie inspired by the magic of the wizarding world.",
         price: 700,
@@ -28,7 +26,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaaac",
         name: "Ravenclaw House Hoodie",
         description: "Stay warm and spellbound in this cozy hoodie inspired by the magic of the wizarding world.",
         price: 700,
@@ -38,7 +35,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaaad",
         name: "Hufflepuff House Hoodie",
         description: "Stay warm and spellbound in this cozy hoodie inspired by the magic of the wizarding world.",
         price: 700,
@@ -48,7 +44,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaaae",
         name: "Magical Hogwarts Hoodie",
         description: "Stay warm and spellbound in this cozy hoodie inspired by the magic of the wizarding world.",
         price: 700,
@@ -58,7 +53,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaaaf",
         name: "Gryffindor Stoneware Mug",
         description: "Sip your favorite potion in style with this enchanting mug inspired by the wizarding world.",
         price: 250,
@@ -68,7 +62,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaaag",
         name: "Slytherin Stoneware Mug",
         description: "Sip your favorite potion in style with this enchanting mug inspired by the wizarding world.",
         price: 250,
@@ -78,7 +71,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaaah",
         name: "Ravenclaw Stoneware Mug",
         description: "Sip your favorite potion in style with this enchanting mug inspired by the wizarding world.",
         price: 250,
@@ -88,7 +80,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaaai",
         name: "Hufflepuff Stoneware Mug",
         description: "Sip your favorite potion in style with this enchanting mug inspired by the wizarding world.",
         price: 250,
@@ -98,7 +89,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaaaj",
         name: "Magical Hogwarts Mug",
         description: "Sip your favorite potion in style with this enchanting mug inspired by the wizarding world.",
         price: 250,
@@ -108,7 +98,6 @@ const products = [
         bestseller: true
     },
     {
-        _id: "aaaak",
         name: "House Mascot Gryffindor Stationery Set",
         description: "Product Description",
         price: 400,
@@ -118,7 +107,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaaal",
         name: "House Mascot Slytherin Stationery Set",
         description: "Product Description",
         price: 400,
@@ -128,7 +116,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaaam",
         name: "House Mascot Ravenclaw Stationery Set",
         description: "Product Description",
         price: 400,
@@ -138,7 +125,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaaan",
         name: "House Mascot Hufflepuff Stationery Set",
         description: "Product Description",
         price: 400,
@@ -148,7 +134,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaaao",
         name: "Magical Hogwarts Notebook Set",
         description: "Product Description",
         price: 250,
@@ -158,7 +143,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaaap",
         name: "Hogwarts Express Pen",
         description: "Product Description",
         price: 170,
@@ -168,7 +152,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaaaq",
         name: "Herbology Notebook",
         description: "Product Description",
         price: 150,
@@ -178,7 +161,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaaar",
         name: "Marauder's Map Stationery Set",
         description: "Product Description",
         price: 400,
@@ -188,7 +170,6 @@ const products = [
         bestseller: true
     },
     {
-        _id: "aaaas",
         name: "Hufflepuff Crest Embossed Journal",
         description: "Product Description",
         price: 200,
@@ -198,7 +179,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaaat",
         name: "Slytherin Crest Embossed Journal",
         description: "Product Description",
         price: 200,
@@ -208,7 +188,6 @@ const products = [
         bestseller: true
     },
     {
-        _id: "aaaau",
         name: "Ravenclaw Crest Embossed Journal",
         description: "Product Description",
         price: 200,
@@ -218,7 +197,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaaav",
         name: "Gryffindor Crest Embossed Journal",
         description: "Product Description",
         price: 200,
@@ -228,7 +206,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaaaw",
         name: "Hogwarts Crest Embossed Journal",
         description: "Product Description",
         price: 200,
@@ -238,7 +215,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaaax",
         name: "Golden Snitch Keyring",
         description: "Product Description",
         price: 210,
@@ -248,7 +224,6 @@ const products = [
         bestseller: true
     },
     {
-        _id: "aaaay",
         name: "Gryffindor House Points Keyring",
         description: "Product Description",
         price: 200,
@@ -258,7 +233,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaaaz",
         name: "Slytherin House Points Keyring",
         description: "Product Description",
         price: 200,
@@ -268,7 +242,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaaba",
         name: "Ravenclaw House Points Keyring",
         description: "Product Description",
         price: 200,
@@ -278,7 +251,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaabb",
         name: "Hufflepuff House Points Keyring",
         description: "Product Description",
         price: 200,
@@ -288,7 +260,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaabc",
         name: "Hogwarts Scarf Keyring",
         description: "Product Description",
         price: 150,
@@ -298,7 +269,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaabd",
         name: "Gryffindor Scarf Keyring",
         description: "Product Description",
         price: 150,
@@ -308,7 +278,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaabe",
         name: "Slytherin Scarf Keyring",
         description: "Product Description",
         price: 150,
@@ -318,7 +287,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaabf",
         name: "Ravenclaw Scarf Keyring",
         description: "Product Description",
         price: 150,
@@ -328,7 +296,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaabg",
         name: "Hufflepuff Scarf Keyring",
         description: "Product Description",
         price: 150,
@@ -338,7 +305,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaabh",
         name: "Time-Turner Keyring",
         description: "Product Description",
         price: 260,
@@ -348,7 +314,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaabi",
         name: "Chocolate Frog",
         description: "Product Description",
         price: 240,
@@ -358,7 +323,6 @@ const products = [
         bestseller: true
     },
     {
-        _id: "aaabj",
         name: "Bertie Bott's Every Flavour Beans",
         description: "Product Description",
         price: 270,
@@ -368,7 +332,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaabk",
         name: "Bottled Butterbeer",
         description: "Product Description",
         price: 250,
@@ -378,7 +341,6 @@ const products = [
         bestseller: true
     },
     {
-        _id: "aaabl",
         name: "Chocolate Galleons",
         description: "Product Description",
         price: 280,
@@ -388,7 +350,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaabm",
         name: "Fizzing Whizbees",
         description: "Product Description",
         price: 260,
@@ -398,7 +359,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaabn",
         name: "Exploding Bon Bons",
         description: "Product Description",
         price: 290,
@@ -408,7 +368,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaabo",
         name: "Gryffindor Milk Chocolate Bar",
         description: "Product Description",
         price: 200,
@@ -418,7 +377,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaabp",
         name: "Hufflepuff Milk Chocolate Bar",
         description: "Product Description",
         price: 200,
@@ -428,7 +386,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaabq",
         name: "Slytherin Dark Chocolate Bar",
         description: "Product Description",
         price: 200,
@@ -438,7 +395,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaabr",
         name: "Ravenclaw Milk Chocolate Bar",
         description: "Product Description",
         price: 200,
@@ -448,7 +404,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaabs",
         name: "Gryffindor Mascot Lion Soft Toy",
         description: "Product Description",
         price: 500,
@@ -458,7 +413,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaabt",
         name: "Slytherin Mascot Snake Soft Toy",
         description: "Product Description",
         price: 500,
@@ -468,7 +422,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaabu",
         name: "Ravenclaw Mascot Raven Soft Toy",
         description: "Product Description",
         price: 500,
@@ -478,7 +431,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaabv",
         name: "Hufflepuff Mascot Badger Soft Toy",
         description: "Product Description",
         price: 500,
@@ -488,7 +440,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaabw",
         name: "Hedwig Soft Toy",
         description: "Product Description",
         price: 500,
@@ -498,7 +449,6 @@ const products = [
         bestseller: true
     },
     {
-        _id: "aaabx",
         name: "Gryffindor House Seeker T-Shirt",
         description: "Product Description",
         price: 350,
@@ -508,7 +458,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaaby",
         name: "Slytherin House Seeker T-Shirt",
         description: "Product Description",
         price: 350,
@@ -518,7 +467,6 @@ const products = [
         bestseller: true
     },
     {
-        _id: "aaabz",
         name: "Ravenclaw House Seeker T-Shirt",
         description: "Product Description",
         price: 350,
@@ -528,7 +476,6 @@ const products = [
         bestseller: false
     },
     {
-        _id: "aaaca",
         name: "Hufflepuff House Seeker T-Shirt",
         description: "Product Description",
         price: 350,
@@ -543,7 +490,7 @@ const products = [
 const seedDB = async () => {
   try {
     await mongoose.connect('mongodb://localhost:27017/kiosk');
-    await productModel.deleteMany(); // optional: clear existing data
+    await productModel.deleteMany(); // clear existing data
     await productModel.insertMany(products);
     console.log("Database seeded successfully!");
     process.exit();

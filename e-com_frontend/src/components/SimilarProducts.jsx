@@ -1,11 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
-// import { ShopContext } from '../context/ShopContext';
-// import Title from '../components/Title';
 import ProductItem from '../components/ProductItem';
 import axios from "axios";
 
 const SimilarProducts = (category) => {
-//   const { products } = useContext(ShopContext);
   const [related, setRelated] = useState([]);
     console.log(category);
   useEffect(() => {
@@ -21,7 +18,6 @@ const SimilarProducts = (category) => {
   return (
     <div className="my-5">
       <div className="py-2 text-center">
-        {/* <Title text1={'RELATED'} text2={'PRODUCTS'} /> */}
         <h1>Similar Products</h1>
       </div>
       <div className="row gy-4">

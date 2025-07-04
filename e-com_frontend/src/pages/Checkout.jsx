@@ -16,7 +16,7 @@ const Checkout = () => {
         if (e.target.checkValidity()) {
             navigate('/confirm');
         } else {
-            e.target.reportValidity(); // Shows browser validation messages
+            e.target.reportValidity(); 
         }
         }}>
         <div className="container py-5 border-top min-vh-80">

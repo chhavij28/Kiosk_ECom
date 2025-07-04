@@ -1,5 +1,4 @@
 import { createContext, useEffect, useState } from "react";
-import { products } from "../assets/assets";
 
 export const CartContext = createContext();
 
@@ -7,12 +6,25 @@ const CartContextProvider = (props) => {
 
     const [cartItems, setCartItems] = useState({});
     const [isInitialized, setIsInitialized] = useState(false);
+    const [products, setProducts] = useState([]);
 
     const currency = "₹";
     const delivery_fee = 50;  
 
+    const getProducts =  async () => {
+    await axios.get('http://localhost:3000/api/product/collections')
+    .then(response =>{
+        console.log("response:", response);
+        setProducts(response.data.products);
+    })
+    .catch(error =>{
+        console.log("error fetching products:", error.message);
+    })
+  }
+
     useEffect(() => {
-        // INFO: Load cart items from localStorage when the component mounts
+        getProducts();
+        // Load cart items from localStorage when the component mounts
         const storedCartItems = JSON.parse(localStorage.getItem("cartItems"));
         if (storedCartItems) {
         setCartItems(storedCartItems);
@@ -22,7 +34,7 @@ const CartContextProvider = (props) => {
 
 
     useEffect(() => {
-        // INFO: Save cart items to localStorage whenever cartItems changes
+        // Save cart items to localStorage whenever cartItems changes
         if(isInitialized){
             localStorage.setItem("cartItems", JSON.stringify(cartItems));
         }

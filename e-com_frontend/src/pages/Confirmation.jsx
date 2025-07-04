@@ -6,7 +6,7 @@ const Confirmation = () => {
 
   useEffect(() => {
     setAnimate(true);
-    const audio = new Audio('/public/mixkit-correct-answer-tone-2870.wav'); // Path to your sound file
+    const audio = new Audio('/public/mixkit-correct-answer-tone-2870.wav'); 
     audio.play();
   }, []);
 
