@@ -87,6 +87,7 @@ const Collections = () => {
     }
 
     useEffect(() => {
+        setCurrentPage(1);
         applyFilter();
     }, [category, subCategory]);
 

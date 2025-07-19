@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+import axios from "axios";
 
 export const CartContext = createContext();
 
@@ -74,7 +75,9 @@ const CartContextProvider = (props) => {
         let totalAmount = 0;
         for(const item in cartItems){
             let itemInfo = products.find((product) => product._id === item);
-            totalAmount += (itemInfo.price * cartItems[item]);
+            if (itemInfo) {
+                totalAmount += itemInfo.price * cartItems[item];
+            }
         }
         return totalAmount;
     }

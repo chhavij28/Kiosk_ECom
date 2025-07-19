@@ -1,28 +1,28 @@
 import React, { useContext, useEffect, useState } from "react";
 import { CartContext } from "../context/CartContext";
 import ProductItem from "./ProductItem";
+import axios from "axios";
 
 const Bestsellers = () => {
   const [ products, setProducts ] = useState([]);
   const [bestSeller, setBestSeller] = useState([]);
 
-  const getProducts =  async () => {
-    await axios.get('http://localhost:3000/api/product/collections')
-    .then(response =>{
-        console.log("response:", response);
-        setProducts(response.data.products);
-    })
-    .catch(error =>{
-        console.log("error fetching products:", error.message);
-    })
-  }
-
-
   useEffect(() => {
+    const getProducts = async () => {
+      try {
+        const response = await axios.get('http://localhost:3000/api/product/collections');
+        const allProducts = response.data.products;
+        setProducts(allProducts);
+        const bestProduct = allProducts.filter((item) => item.bestseller);
+        setBestSeller(bestProduct.slice(0, 8));
+      } catch (error) {
+        console.error("error fetching products:", error.message);
+      }
+    };
+
     getProducts();
-    const bestProduct = products.filter((item) => item.bestseller);
-    setBestSeller(bestProduct.slice(0, 8));
   }, []);
+
 
   return (
     <div className="my-5">
@@ -34,14 +34,14 @@ const Bestsellers = () => {
       </div>
 
       <div className="row gy-4 gx-3">
-        {bestSeller.map((item, index) => (
+        {bestSeller.length > 0 && bestSeller.map((item, index) => (
           <div key={index} className="col-6 col-sm-4 col-md-3 col-lg-3">
             <ProductItem
               id={item._id}
               image={item.image}
               name={item.name}
               price={item.price}
-            />
+            />  
           </div>
         ))}
       </div>
